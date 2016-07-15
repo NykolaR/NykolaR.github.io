@@ -1,21 +1,37 @@
 body {
   background-color: black;
-  color: lightgray;
+  color: #BDBDBD;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-}
-
-.center {
-  display: block;
-  margin: auto;
-  width: auto;
+  line-height: 1.3;
 }
 
 .centerBody {
-  display: block;
-  margin: auto;
-  width: 50%;
+  background-color: #0A0A0A;
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  width: 48%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.centerImage {
+  width: 94%;
+  padding-top: 3%;
+  padding-left: 3%;
+}
+
+.leftBody {
+  position: absolute;
+  left: 0%;
+  right: 75%;
+  width: 25%;
+}
+
+.tab {
+  padding-left: 2em;
 }
 
 .header {
@@ -24,8 +40,9 @@ body {
 }
 
 .header img {
-  width: 40px;
-  height: auto;
+  width: 30px;
+  height: 30px;
+  padding-left: 15px;
 }
 
 .headerText {
@@ -41,29 +58,76 @@ body {
 }
 
 .headerRight {
-  float: right;
-  padding: 5px;
+  position: fixed;
+  right: 0;
+  padding: 15px;
+}
+
+.bold {
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+.normalbold {
+  font-weight: bold;
+}
+
+.onethumbnail {
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 15px;
+}
+
+.twothumbnail {
+  width: 45%;
+  padding-left: 2.2%;
+  padding-right: 2.2%;
+  padding-bottom: 15px;
+}
+
+iframe {
+  width: 90%;
+  padding: 5%;
+}
+
+li {
+  padding: 4px;
+}
+
+hr {
+  color: #B50015;
 }
 
 a:link, a:visited {
-  background-color: black;
   color: white;
   text-decoration: none;
   text-align: center;
 }
 
-a:hover {
-  background-color: darkgrey;
+.ital {
+  font-style: oblique;
+}
+
+.headerText:hover {
+  background-color: grey;
   color: white;
   text-decoration: none;
 }
 
-a:active {
-  background-color:lightgrey;
-  color: green;
+.headerText:active {
+  background-color: white;
+  color: grey;
   text-decoration: none;
 }
 
+.important {
+  font-variant: small-caps;
+  padding-left: 20px;
+  color: #B50015;
+  font-size: 22px;
+}
+
 #on {
-  background-color: darkred;
+  background-color: #B50015;
 }
