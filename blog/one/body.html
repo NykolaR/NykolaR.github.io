@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- Written by NYKOLAR. Hi there! -->
+  <head>
+    <link rel="stylesheet" href="../../style.css">
+    <script type="text/javascript" src="../../javascript.js"></script>
+  </head>
+
+  <body>
+
+    <div id="placeHead"></div>
+    <script>blogHeader("blog")</script>
+
+    <ul class="leftBody">
+      <p class="important">CONTENTS</p>
+      <li><a href="#intro">Intro</a></li>
+      <li><a href="#general">General</a></li>
+      <li>
+        <a href="#mapgen">Map Generation</a>
+        <ul>
+          <li><a href="#attributes">Attributes</a></li>
+          <li><a href="#limits">Limits</a></li>
+        </ul>
+      </li>
+      <li><a href="#conclusion">Conclusion</a></li>
+    </ul>
+
+    <div class="centerBody">
+      <p class="important">Creating a World of Darkness: Part One - Maps</p>
+
+      <p class="important" id="intro">Intro:</p>
+      <p><span class="tab">Welcome </span>to the first part of the blog series on the creation of Darkness Reclamation, specifically, focused on the topic of random generation. In this opening part, the topic will be divided between general generation logic, and specifically map logic.</p>
+
+      <p class="important" id="general">General:</p>
+      <p><span class="tab">To </span>create anything randomly generated, there are two key focuses on the thing: what attributes of it can be randomized and to what extents, and what limits will be placed to ensure what is created functions as is intended.</p>
+      <p><span class="tab">From </span>these two basic ideas, all the generation being done in Darkness Reclamation is done. Lets take a look at how this applies to map generation.</p>
+
+      <p class="important" id="mapgen">Map Generation:</p>
+
+      <p class="important" id="attributes">Attributes</p>
+      <p><span class="tab">A </span>map, at least in DR, consists of two components: rooms, and doors. Rooms are represented by squares, and doors by rectangles.</p>
+
+      <ul>
+        <li>Room attributes: Whether it contains an item or not.</li>
+        <li>Door attributes: Which weapon can open it (also affects color).</li>
+      </ul>
+
+      <p><span class="tab">A</span> map consists of a 2D grid of room tiles, in game defaulting to 40x40 rooms. Each room contains 4 doors, which is either a door, a wall, or nothing.</p>
+      <p><span class="tab">With</span> all these attributes defined, lets look at how these things are contained to create maps, and how the map generation can improve with further time in development.</p>
+
+      <a href="randomap1.png" target="_blank">
+        <img src="randomap1.png" class="twothumbnail" title="Map">
+      </a>
+      <a href="randomap3.png" target="_blank">
+        <img src="randomap3.png" class="twothumbnail" title="Map">
+      </a>
+
+      <p class="important" id="limits">Limits</p>
+      <p><span class="tab">When</span> creating a map, there has to be constraints put in place, so as to create a functioning map. Some basic constraints placed on DR map generation are:</p>
+
+      <ul>
+        <li>All rooms must be connected on a map. It needs at least 1 surrounding square to exist.</li>
+        <a href="randomap2.png" target="_blank">
+          <img src="randomap2.png" class="rightthumbnail" title="Map">
+        </a>
+        <li>There must be a door between two seperate areas</li>
+        <li>If a room leads to no connection, it needs walls</li>
+        <li>A room either has an item, or doesn't</li>
+        <li>There must be a route of progression from collecting items</li>
+      </ul>
+
+      <p><span class="tab">These</span> constraints lead to some basic maps, with all rooms connected, and a path of progression to all items present. In addition, it stores whether a room contains an item or not in memory, which helps with the next blog topic, of area generation.</p>
+      <p><span class="tab">Of</span> course, the map generator in game deals with much more than just the above constraints, as it needs to build the maps asynchronously (at the same time) to create progression routes that intertwine between the maps, as well as record more general information about area shapes and purposes (for helping with area and music generation), and it needs to understand the abilities being placed in order to create level design that incorporates the players evolving abilities.</p>
+      <p><span class="tab">In</span> the future of development, the map generation will become more refined, allowing for more solid map creation, helping the game to feel more crafted. An example of this kind of refinement are the recently developed hallway areas, which help add breadth to the map, and create areas where mobile enemies can thrive, shown in effect circled with red below.</p>
+
+      <a href="3maps.png" target="_blank">
+        <img src="3maps.png" class="onethumbnail" title="Hallways">
+      </a>
+
+      <p class="important" id="conclusion">Conclusion</p>
+      <p><span class="tab">Next</span> blog, we'll be looking at area generation, and how it works to solidify the experience both in gameplay, and in atmosphere. Until next time!</p>
+
+    </div>
+
+  </body>
+</html>

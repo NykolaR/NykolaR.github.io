@@ -86,6 +86,12 @@ body {
   padding-bottom: 15px;
 }
 
+.rightthumbnail {
+  position: absolute;
+  width: 20%;
+  right: 1%;
+}
+
 iframe {
   width: 90%;
   padding: 5%;
