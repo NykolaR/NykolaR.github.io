@@ -1,139 +1,88 @@
 body {
-  background-color: black;
-  color: #BDBDBD;
+  background: url(svg/tree.svg);
+  background-size: 100% 4046px;
+  color: #000000;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
   margin: 0;
   padding: 0;
-  line-height: 1.3;
+  line-height: 1.5;
 }
 
-.centerBody {
-  background-color: #0A0A0A;
-  position: absolute;
-  left: 25%;
-  right: 25%;
-  width: 48%;
-  padding-left: 1%;
-  padding-right: 1%;
-}
-
-.centerImage {
-  width: 94%;
-  padding-top: 3%;
-  padding-left: 3%;
-}
-
-.leftBody {
-  position: absolute;
-  left: 0%;
-  right: 75%;
-  width: 25%;
-}
-
-.tab {
-  padding-left: 2em;
-}
-
-.header {
-  width: 100%;
-  height: 15px;
-}
-
-.header img {
-  width: 30px;
-  height: 30px;
-  padding-left: 15px;
-}
-
-.headerText {
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-
-.headerLeft {
-  float: left;
-  padding: 5px;
-}
-
-.headerRight {
+/* nav style */
+nav {
+  background-color: #ccddb7;
   position: fixed;
-  right: 0;
-  padding: 15px;
+  width: 100%;
+  height: 46px;
+  z-index: 2;
 }
 
-.bold {
-  font-weight: bold;
-  font-variant: small-caps;
-}
-
-.normalbold {
-  font-weight: bold;
-}
-
-.onethumbnail {
-  width: 80%;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 15px;
-}
-
-.twothumbnail {
-  width: 45%;
-  padding-left: 2.2%;
-  padding-right: 2.2%;
-  padding-bottom: 15px;
-}
-
-.rightthumbnail {
-  position: absolute;
-  width: 20%;
-  right: 1%;
-}
-
-iframe {
-  width: 90%;
-  padding: 5%;
+ul {
+  list-style-type: none;
 }
 
 li {
-  padding: 4px;
+  height: 42px;
+  float: left;
+  padding-left: 12.5%;
+  padding-right: 12.5%;
 }
 
-hr {
-  color: #B50015;
+.icon {
+  position: absolute;
+  height: 42px;
+  top: 2px;
 }
 
-a:link, a:visited {
-  color: white;
-  text-decoration: none;
-  text-align: center;
+.showcase img {
+  border-radius: 10px;
+  opacity: 0.8;
 }
 
-.ital {
-  font-style: oblique;
+.showcase img:hover {
+  opacity: 1.0;
 }
 
-.headerText:hover {
-  background-color: grey;
-  color: white;
-  text-decoration: none;
+#home {
+  height: 800px;
 }
 
-.headerText:active {
-  background-color: white;
-  color: grey;
-  text-decoration: none;
+#design {
+  height: 1000px;
 }
 
-.important {
-  font-variant: small-caps;
-  padding-left: 20px;
-  color: #B50015;
-  font-size: 22px;
+#games {
+  height: 800px;
 }
 
-#on {
-  background-color: #B50015;
+#programming {
+  height: 1400px;
+}
+
+.svghome{
+  font: bold 3.75em 'Arial';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+text{
+  fill: whitesmoke;
+  stroke: black;
+  stroke-width:1.5px;
+  stroke-linejoin: round;
+}
+
+.right {
+  position: relative;
+  width: 30%;
+  left: 60%;
+}
+
+.left {
+  position: absolute;
+  width: 30%;
+  left: 10%;
 }

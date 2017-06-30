@@ -1,43 +1,78 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<!-- Written by NYKOLAR. Hi there! -->
+<!-- Written by N. Hi there! -->
+<!-- This was incredibly quickly hacked together, please don't judge me too hard for my webdev antiskills -->
   <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="javascript.js"></script>
+    <title>NykolaR</title>
   </head>
 
-  <!-- Version 2.0 -->
-
+  <!-- Version 0.1 -->
   <body>
-
-    <div id="placeHead"></div>
-    <script>header("home")</script>
-
-    <!-- INDEX BODY -->
-
-    <ul class="leftBody">
-      <p class="important">BLOG:<br>CREATING A WORLD</p>
-      <li><a href="blog/one/body.html">Maps</a></li>
-    </ul>
-
-    <div class="centerBody">
-      <a href="https://www.kickstarter.com/projects/1981932141/darkness-reclamation" target="_blank">
-        <img src="images/DRlogo.png" class="centerImage">
-      </a>
-
-      <p class="important">Playable Demo Released!</p>
-      <p><span class="tab">I'm</span> so happy to announce a playable demo of Darkness Reclamation has
-        been released on itch.io to be downloaded and played. Check it out below!
-      </p>
-
-      <iframe frameborder="0" src="https://itch.io/embed/78366?linkback=true&amp;border_width=3&amp;bg_color=000000&amp;fg_color=cccccc&amp;link_color=ef601a&amp;border_color=353535" width="556" height="171"></iframe>
-
-        <p class="important">Kickstarter Launched!</p>
-      </a>
-      <p><span class="tab">New</span> development blog post on the random generation of maps <a href="blog/one/body.html">here</a>!
-      Also, for more information on Darkness Reclamation beyond the <a href="https://www.kickstarter.com/projects/1981932141/darkness-reclamation" target="_blank">Kickstarter</a>, check out the <a href="press.html">press page</a> and <a href="about.html">about page</a>!</p>
+    <nav>
+      <ul>
+        <li><a href="#home">
+          <img class="icon" src="images/icons/home.svg" alt="Home">
+        </a></li>
+        <li><a href="#design">
+          <img class="icon" src="images/icons/design.svg" alt="Design">
+        </a></li>
+        <li><a href="#games">
+          <img class="icon" src="images/icons/games.svg" alt="Games">
+        </a></li>
+        <li><a href="#programming">
+          <img class="icon" src="images/icons/programming.svg" alt="Programming">
+        </a></li>
+      </ul>
+    </nav>
+    <br/>
+    
+    <div class="showcase" id="home">
+      <!-- content -->
+      <br/><br/>
+      <svg class="svghome" viewbox="0 0 800 800">
+        <text y="100px" x="0%">Hi, I'm Nyk</text>
+        <text y="250px" x="20%">I design</text>
+        <text y="400px" x="40%">Write programs</text>
+        <text y="550" x="20%">Compose music</text>
+        <text y="700" x="0%">And develop games</text>
+      </svg>
     </div>
-    <!-- END INDEX -->
-
+      
+    <div class="showcase" id="design">
+      <!-- content -->
+      <svg class="svghome" viewbox="0 0 1000 150">
+        <text y="100px" x="40%">Design</text>
+      </svg>
+      <img class="right" src="images/design/sliced.png" alt="SLICED logo" style="top: -230px">
+      <img class="left" src="images/design/air.png" alt="AIR logo" style="top: 2000px">  
+    </div>
+    
+    <div class="showcase" id="games">
+    <!-- content -->
+      <svg class="svghome" viewbox="0 0 1000 150">
+        <text y="100px" x="60%">Games</text>
+      </svg>
+      
+      <a href="https://nykolar.itch.io/boy-and-bee" target="_blank">
+        <img class="right" src="images/games/bandb.gif" alt="Boy and Bee" style="top: -190px">
+      </a>
+      
+      <a href="https://nykolar.itch.io/air" target="_blank">
+        <img class="left" src="images/games/air.png" alt="AIR" style="top: 2700px">
+      </a>
+    </div>
+    
+    <div class="showcase" id="programming">
+      <!-- content -->
+      <svg class="svghome" viewbox="0 0 1000 150">
+        <text y="100px" x="60%">Programming</text>
+      </svg>
+      
+      <a href="https://github.com/NykolaR" target="_blank">
+        <img class="left" src="images/programming/github.png" alt="github" style="top: 3340px">
+      </a>
+    </div>
   </body>
 </html>
