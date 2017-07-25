@@ -1,7 +1,6 @@
 body {
-  background: url(svg/tree.svg);
-  background-size: 100% 4046px;
-  color: #000000;
+  background-color: #e7ecef;
+  color: #222d35;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
   margin: 0;
@@ -11,22 +10,32 @@ body {
 
 /* nav style */
 nav {
-  background-color: #ccddb7;
+  background-color: #f5f5f5;
   position: fixed;
   width: 100%;
   height: 46px;
   z-index: 2;
 }
 
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4em;
+}
+
+hr {
+  border-width: 3px;
+}
+
 ul {
   list-style-type: none;
+  display: table;
+  width: 100%;
 }
 
 li {
   height: 42px;
-  float: left;
-  padding-left: 12.5%;
-  padding-right: 12.5%;
+  display: table-cell;
 }
 
 .icon {
@@ -36,53 +45,37 @@ li {
 }
 
 .showcase img {
+  width: 40%;
+  vertical-align: middle;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   border-radius: 10px;
-  opacity: 0.8;
+  opacity: 0.6;
+  
+  -webkit-transition: all 1s ease; /* Safari and Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -o-transition: all 1s ease; /* IE 9 */
+  -ms-transition: all 1s ease;
+}
+
+@keyframes fade {
+  from {opacity: 0.6;}
+  to {opacity: 1.0;}
+}
+
+.showcase span {
+  font-size: 1.5em;
+  font-style: italic;
 }
 
 .showcase img:hover {
+  -webkit-transform:scale(1.2); /* Safari and Chrome */
+  -moz-transform:scale(1.2); /* Firefox */
+  -ms-transform:scale(1.2); /* IE 9 */
+  -o-transform:scale(1.2); /* Opera */
+  transform:scale(1.2);
   opacity: 1.0;
-}
-
-#home {
-  height: 800px;
-}
-
-#design {
-  height: 1000px;
-}
-
-#games {
-  height: 800px;
-}
-
-#programming {
-  height: 1400px;
-}
-
-.svghome{
-  font: bold 3.75em 'Arial';
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-
-text{
-  fill: whitesmoke;
-  stroke: black;
-  stroke-width:1.5px;
-  stroke-linejoin: round;
-}
-
-.right {
-  position: relative;
-  width: 30%;
-  left: 60%;
-}
-
-.left {
-  position: absolute;
-  width: 30%;
-  left: 10%;
+  z-index: 1;
 }
